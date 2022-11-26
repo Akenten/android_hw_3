@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавление трека"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.167" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Название"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Исполнитель"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Альбом"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputTrackName"
+            android:layout_width="242dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputTrackArtist"
+            android:layout_width="221dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.309"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputTrackName" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputTrackAlbum"
+            android:layout_width="208dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputTrackArtist" />
+
+        <Button
+            android:id="@+id/buttonSaveTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="Добавить"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputTrackAlbum" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
